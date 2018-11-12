@@ -1,0 +1,6 @@
+<DsControlCenterConfiguration>
+	<Plugins>
+		<Plugin name="Hello World" class="com.doudsystems.dscontrolcenter.plugins.HelloWorldPlugin" />
+		<Plugin name="Hello Again" class="com.doudsystems.dscontrolcenter.plugins.HelloWorldPlugin" />
+	</Plugins>
+</DsControlCenterConfiguration>

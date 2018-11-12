@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Plato
+{
+    public class Action
+    {
+        string id;
+        public string getId() { return this.id; }
+        public void setId(string id) { this.id = id; }
+
+        Engine engine;
+        public Engine getEngine() { return this.engine; }
+        public void setEngine(Engine engine) { this.engine = engine; }
+
+        public virtual void Execute()
+        {
+            System.Diagnostics.Debug.WriteLine("DEBUG: Action[" + id + "].Execute()");
+        }
+
+        public Action() { }
+
+        public Action(string id)
+        {
+            this.id = id;
+        }
+    }
+
+    public class AssertFactAction : Action
+    {
+        Fact fact;
+        public Fact getFact() { return this.fact; }
+        public void setFact(Fact fact) { this.fact = fact; }
+
+        public override void Execute()
+        {
+
+        }
+
+        public AssertFactAction() : base() { }
+
+        public AssertFactAction(string id) : base(id) { }
+    }
+
+    public class Actions : System.Collections.Generic.List<Action>
+    {
+        public Actions() : base() { }
+    }
+}

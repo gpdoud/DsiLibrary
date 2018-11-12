@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Plato
+{
+    public class Fact
+    {
+        string id;
+        public string getId() { return this.id; }
+        public void setId(string id) { this.id = id; }
+
+        public Fact() { }
+
+        public Fact(string id)
+        {
+            this.id = id;
+        }
+    }
+
+    public class Facts : System.Collections.Generic.List<Fact>
+    {
+        public Facts() : base() { }
+    }
+}

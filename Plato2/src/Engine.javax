@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Plato
+{
+    public class Engine
+    {
+        Facts facts = new Facts();
+        Rules rules = new Rules();
+
+        public void LoadFact(Fact fact)
+        {
+            facts.Add(fact);
+        }
+
+        public void LoadRule(Rule rule)
+        {
+            rules.Add(rule);
+        }
+
+        private void ProcessRules()
+        {
+            foreach (Rule rule in rules)
+            {
+                bool fireRule = true;
+                foreach (Fact fact in rule.requiredFacts)
+                {
+                    if (!facts.Contains(fact))
+                        fireRule = false;
+                }
+                if (fireRule)
+                    rule.Fire();
+            }
+        }
+
+        public void Run(object message)
+        {
+            msg("Start of engine execution ...");
+            
+            if(message != null)
+                msg(message);
+
+            ProcessRules();
+            
+            msg("End of engine execution ...");
+        }
+
+        public void Run()
+        {
+            Run(null);
+        }
+
+        void msg(object message)
+        {
+            string msgStr = "PLATO: " + message.ToString();
+            Console.WriteLine(msgStr);
+            System.Diagnostics.Debug.WriteLine(msgStr);
+        }
+
+        public Engine() { }
+    }
+}

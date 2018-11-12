@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<customers>
+    <customer id="gd">
+        <name>Gregory Doud</name>
+        <address>260 Riva Ridge Ct</address>
+        <city>Loveland</city>
+        <state>Ohio</state>
+        <zip>45140-7793</zip>
+        <phone>513-703-7315</phone>
+    </customer>
+    <customer id="cd">
+        <name>Cynthia Doud</name>
+        <address>260 Riva Ridge Ct</address>
+        <city>Loveland</city>
+        <state>Ohio</state>
+        <zip>45140-7793</zip>
+        <phone>513-304-7990</phone>
+    </customer>
+    <customer id="nd">
+        <name>Nicholas Doud</name>
+        <address>260 Riva Ridge Ct</address>
+        <city>Loveland</city>
+        <state>Ohio</state>
+        <zip>45140-7793</zip>
+        <phone>513-600-4732</phone>
+    </customer>
+    <customer id="kd">
+        <name>Kenneth Doud</name>
+        <address>260 Riva Ridge Ct</address>
+        <city>Loveland</city>
+        <state>Ohio</state>
+        <zip>45140-7793</zip>
+        <phone>513-600-3890</phone>
+    </customer>
+</customers>

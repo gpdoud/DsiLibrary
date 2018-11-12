@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Plato
+{
+    class Program
+    {
+        void Run()
+        {
+            Engine engine = new Engine();
+
+            Fact fact1 = new Fact("Fact-1");
+            Fact fact2 = new Fact("Fact-2");
+            
+            Rule rule1 = new Rule("Rule-1");
+            rule1.requiredFacts.Add(fact1);
+            Action action1 = new Action("Action-1");
+            action1.setEngine(engine);
+            rule1.actions.Add(action1);
+            engine.LoadRule(rule1);
+            
+            Rule rule2 = new Rule("Rule-2");
+            rule2.requiredFacts.Add(fact1);
+            rule2.requiredFacts.Add(fact2);
+            AssertFactAction action2 = new AssertFactAction("AssertFactAction-2");
+            action2.setEngine(engine);
+            Fact fact3 = new Fact("Fact-3");
+            action2.setFact(fact3);
+            rule2.actions.Add(action2);
+            engine.LoadRule(rule2);
+
+            Rule rule3 = new Rule("Rule-3");
+            rule3.requiredFacts.Add(fact3);
+            Action action3 = new Action("Action-3");
+            rule3.actions.Add(action3);
+            engine.LoadRule(rule3);
+            
+            engine.Run("No facts - rule should not fire");
+            
+            engine.LoadFact(fact1);
+            engine.Run("Fact1 asserted - rule1 should fire.");
+            
+            engine.LoadFact(fact2);
+            engine.Run("Fact2 asserted - rule2 and rule3 should fire.");
+
+        }
+
+        static void Main(string[] args)
+        {
+            Program pgm = new Program();
+            pgm.Run();
+        }
+    }
+}

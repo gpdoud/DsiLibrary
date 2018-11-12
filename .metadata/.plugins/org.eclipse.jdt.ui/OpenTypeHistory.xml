@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeInfoHistroy>
+<typeInfo enclosingTypes="" modifiers="33" name="ArrayList" package="java.util" path="C:\Program Files\Java\jre1.5.0_06\lib\rt.jar|java/util/ArrayList.class" timestamp="1131646203000"/>
+<typeInfo enclosingTypes="" modifiers="1" name="DsBase" package="com.doudsystems.dsdataservices" path="/com.doudsystems.dsdataservices/src/com/doudsystems/dsdataservices/DsBase.java" timestamp="1157725136000"/>
+<typeInfo enclosingTypes="" modifiers="513" name="IDsDataSource" package="com.doudsystems.dsdatasources" path="/com.doudsystems.dsdataservices/src/com/doudsystems/dsdatasources/IDsDataSource.java" timestamp="1158166772000"/>
+</typeInfoHistroy>

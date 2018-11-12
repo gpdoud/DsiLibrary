@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource '/com.doudsystems.dscontrolcenter/src/com/doudsystems/dscontrolcenter/DsControlCenter.xml' to 'DsControlCenterConfiguration.xml'&#13;&#10;- Original element: 'DsControlCenter.xml'" description="Rename resource 'DsControlCenter.xml'" flags="7" id="org.eclipse.jdt.ui.rename.resource" input="src/com/doudsystems/dscontrolcenter/DsControlCenter.xml" name="DsControlCenterConfiguration.xml" stamp="1155754791607" version="1.0"/>
+</session>

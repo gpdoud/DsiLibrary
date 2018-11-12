@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+	<customer nbr="123" name="ABC Company" credit="25000" />
+	<customer nbr="456" name="DEF Company" credit="35000" />
+	<customer nbr="789" name="GHI Company" credit="45000" />
+</customers>

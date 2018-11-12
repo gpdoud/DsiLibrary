@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root id="abc">
+<anode id="def"/>
+<bnode id="xyz">this is the b node</bnode>
+<cnode id="c1"/>
+</root>
